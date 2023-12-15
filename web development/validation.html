@@ -1,0 +1,74 @@
+<html>
+  <head>
+   <title>Validation</title> 
+   
+     <script type="text/javascript">
+       
+        function val(){
+               if(  document.forms.F1.subject.value=="")
+                    {
+                     window.alert(" Please provide data!!!");
+                     return false;
+                    }
+
+                  if(  document.forms.F1.mark1.value=="")
+                    {
+                     window.alert(" Data Requried!!!");
+                     return false;
+                    }
+         
+                
+                if(document.forms.F1.mark2.value=="")
+                    {
+                     window.alert(" Data Requried!!!");
+                     return false;
+                    }
+                   
+                 }
+        
+        function clear(){
+                document.forms.F1.reset();
+                }
+        
+        
+        
+   
+     </script>
+     
+  </head> 
+  
+    <body>
+    
+      <center>
+      
+        <form id="F1" onsubmit="return val()" action="validation.html" method="POST">
+        
+          <table style="Border:1px; text=center;">
+          
+            <tr>
+              <td>Subject</td>
+              <td><input id="subject"  ></td> 
+            </tr>
+            
+            <tr>
+              <td>Mark 1</td>
+              <td><input id="mark1"></td>
+            </tr>
+            
+            <tr>
+              <td>Mark 2</td>
+              <td><input id="mark2" ></td>
+            </tr>
+            
+          </table>
+          <br>
+          <tr>
+               <td><input type="submit" value="click"</td>
+               <td><input type="submit" value="clear" onclick="clear()"></td>
+          </tr>
+        </form>
+        
+      </center>
+      
+    </body>
+</html>
