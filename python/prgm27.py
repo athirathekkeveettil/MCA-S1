@@ -1,0 +1,5 @@
+a=input("Enter the colors in 1:")
+a=a.split(",")
+b=input("Enter the colors in 2:")
+b=b.split(",")
+print("The colors:",set(a)-set(b))

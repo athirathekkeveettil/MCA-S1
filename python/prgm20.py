@@ -1,0 +1,5 @@
+a=input("enter the numbers:")
+a=list(map(int,a.split(",")))
+print(a)
+a.sort()
+print("Second smallest:",a[1])
