@@ -1,0 +1,109 @@
+<html>
+ <head>
+   <title>Student Registration Form</title>
+<script type="text/javascript">
+function ver()
+{
+ if (document.Forms.F1.N1.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F1.N1.Focus();
+ }
+if (document.Forms.F2.N2.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F2.N2.Focus();
+ }
+if (document.Forms.F3.N3.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F3.N3.Focus();
+ }
+if (document.Forms.F4.N4.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F4.N4.Focus();
+ }
+if (document.Forms.F5.N5.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F5.N5.Focus();
+ }
+if (document.Forms.F6.N6.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F6.N6.Focus();
+ }
+if (document.Forms.F7.N7.value=="")
+  {
+   window.alert("Please Provide Data");
+   document.Forms.F7.N7.Focus();
+ }
+}
+function reset()
+{
+document.getElementById("F1").reset();
+}
+</script>
+<body bgcolor="pink">
+<center>
+<h1>MAR ATHANASIUS COLLEGE OF ENGINEERING</h1>
+<h2>STUDENT REGISTRATION</h2>
+<form id"F1" onSubmit="return ver()">
+<table>
+<tr>
+ <td>Name</td>
+ <td><input type="text" id="N1"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" value="male">MALE</td>
+<td><input type="radio" value="female">FEMALE</td>
+<td><input type="radio" value="others">OTHERS</td>
+</tr>
+<tr>
+<td>DOB</td>
+<td><input type="date" id="N2"></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea cols="15" rows="10" id="N3"></textarea></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input type="number" id="N4"></td>
+</tr>
+<tr>
+<td>Guardian</td>
+<td><input type="text" id="N5"></td>
+</tr>
+<tr>
+<td>Course</td>
+<td><select><option value="BA">BA</option>
+            <option value="Bsc">Bsc</option>
+            <option value="BCA">BCA</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td>Hobbies</td>
+<td><input type="text" id="N6"></td>
+</tr>
+<tr>
+<td>Extra Curricular Activities</td>
+<td><textarea cols="15" rows="10" id="N7"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="SUBMIT" name="SUBMIT">
+<input type="reset" value="CANCEL" onclick="reset()"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
