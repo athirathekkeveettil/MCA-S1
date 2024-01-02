@@ -1,13 +1,9 @@
-# Write lambda functions, each to find area of square, rectangle and triangle.
+# function to get a new string from a given string by adding 'ls' to the begginning of string ,if already begins with 'ls' return string unchnaged
 
-square=lambda s:print ("area of square=",s*s)
-rectangle=lambda l,b:print ("area of rectangle=",l*b)
-triangle=lambda ba,h:print ("area of triangle=",0.5*ba*h)
-s=int(input("enter the side of the square:"))
-l=int(input("enter the length of the rectangle:"))
-b=int(input("enter the breadth of the rectangle:"))
-h=int(input("enter the height of the triangle:"))
-ba=int(input("enter the base of the triangle:"))
-square(s)
-rectangle(l,b)
-triangle(ba,h)
+def string(s):
+    if s.startswith('ls'):
+        return s
+    else:
+        return 'ls'+s
+s=input("Enter a string:")
+print("New String:",string(s))
